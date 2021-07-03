@@ -1,0 +1,39 @@
+ 
+
+@media (max-width: 1240px){
+   
+    
+
+
+}
+@media (max-width: 1200px){ 
+
+    
+
+}
+@media (max-width: 940px){
+    .onboard_inner{width: 94%;}
+    .onboard_content_left {width: 200px;}
+    .onboard_content_right {width: calc(100% - 200px);}
+    .onboard_checkboxs p{width: 115px;}
+    .onboard_content_right > div {padding: 40px 30px;}
+}
+
+
+@media(max-width : 767px){
+     
+}
+
+
+
+
+@media (max-width: 480px){
+    
+
+}
+
+
+@media (max-width: 360px){
+     
+
+}

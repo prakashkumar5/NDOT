@@ -1,0 +1,73 @@
+*{box-sizing: border-box;} 
+a,a:hover{text-decoration: none;}
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, ol, ul, li, form, label, tbody, tfoot, thead, footer, header, section { margin: 0; padding: 0;}
+@font-face{font-family:'googlesans';src:url('../fonts/googlesans/googlesans-regular.woff2') format('woff2'),url('../fonts/googlesans/googlesans-regular.eot?#iefix') format('embedded-opentype'),url('../fonts/googlesans/googlesans-regular.ttf')format('truetype'),url('../fonts/googlesans/googlesans-regular.woff') format('woff');font-weight: 100;font-style: normal;}
+@font-face{font-family:'googlesans';src:url('../fonts/googlesans/googlesans-medium.woff2') format('woff2'),url('../fonts/googlesans/googlesans-medium.eot?#iefix') format('embedded-opentype'),url('../fonts/googlesans/googlesans-medium.ttf')format('truetype'),url('../fonts/googlesans/googlesans-medium.woff') format('woff');font-weight: 400;font-style: normal;}
+.pl-15{padding-right: 15px !important;}
+.heig {min-height: 160px;padding-bottom: 20px;}
+header{background: #000;padding: 10px 20px;position: fixed;width: 100%;z-index: 999;}
+.onboard,.onboard_content{width: 100%;display: inline-block;}
+.onboard{padding: 75px 0;margin-top: 60px;}
+.onboard_inner{width: 910px;margin: 0 auto;border:1px solid #e5ebec;border-radius: 8px;overflow: hidden;}
+.nav_bar p{font: 400 20px/74px googlesans;color:#000;padding: 0 30px;}
+.nav_bar{border-bottom:1px solid #eee;}
+.onboard_content_left{width: 245px;}
+.onboard_content_left .navbar-nav{flex-direction: column;width: 100%;}
+.onboard_content_right{width: calc(100% - 245px);}
+.bg-dark{background: #f9f9f9 !important;border:1px solid #e0e4e9;}
+.onboard_content_left .navbar,.onboard_content_left .nav-link{padding: 0 !important;width: 100%;}
+.onboard_content_left .nav-link,.tabs li a{font:400 14px/72px googlesans;color:#000;border-left: 3px solid transparent;padding-left: 30px !important;position: relative;display: block;}
+.onboard_content_left .nav-link.active,.onboard_content_left .nav-link:hover,.tabs li a.active,.tabs li a:hover{background: #fff;color: #000;border-color: #000;}
+.onboard_content_left .nav-link.active:after,.onboard_content_left .nav-link:hover:after,.tabs li a.active:after,.tabs li a:hover:after{background:#fff;content: "";position: absolute;width: 4px;right: -2px;top: 0;height: 100%;}
+
+.onboard_content_right > div{padding:40px 45px;}
+.product_descr p{font:400 18px googlesans; color:#000;padding-bottom: 10px;}
+.product_descr span{font:400 14px/20px googlesans; color:#777}
+.onboard_checkbox_body .onboard_checkbox {width: 152px;display: inline-block;height: 126px; position: relative;}
+/* .onboard_checkbox_body .onboard_checkbox:nth-child(3n+1) {margin-left:0px;} */
+.onboard_check {position: absolute;top: 0;left: 0;height: 126px;width: 100%;text-align: center;background-color: #fbfbfb;border-radius: 5px;border: 1px solid #efefef;box-shadow: 0 5px 15px rgba(160, 192, 252, 0.08);padding: 26px;display: block;cursor: pointer;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
+.onboard_check input[type="checkbox"] {position: absolute;opacity: 0;cursor: pointer;height: 126px;width: 100%;left: 0;top: 0;}
+.onboard_check input:checked ~ .checkmark {background-color: transparent;}
+.onboard_check input:checked ~ .checkmark:before {position: absolute;content: '';top: 10px;left: 10px;height: 10px;width: 10px;background: url(../images/tick.png) no-repeat;z-index: 2;}
+.checkmark span, .checkmark p {position: relative;z-index: 1;}
+.checkmark:after {content: "";position: absolute;display: none; z-index: 0;}
+.onboard_check input:checked ~ .checkmark:after {display: block;}
+.onboard_check .checkmark:after{top: 0;left: 0;content: '';height: 126px;width: 100%; background-color: #f1f1f1;border-radius: 5px;border: 1px solid #000;}
+.onboard_checkbox p{font:400 15px googlesans; color:#606978;margin-top: 17px;}
+.bottom_but a,.bottom_but a.fill,.bottom_but a.fill:hover{background: #fff;cursor: pointer;border: 1px solid #000;transition: 0.3s ease;color: #000;width: 115px;border-radius: 100px;margin: 20px 0 0 auto;display: block;text-align: center;text-decoration: none;font:400 14px/45px googlesans;}
+.bottom_but a:hover,.bottom_but a.fill{background: #000;color:#fff}
+.product_list{display: none;}
+.product_list.active{display: block;}
+.rounder_select .onboard_check .checkmark:after,.rounder_select .onboard_check,.rounder_select .onboard_check input[type="checkbox"]{background-color: #fff;height: 50px;border-radius: 50px;padding:0;box-shadow: none;} 
+.rounder_select .onboard_checkbox p{color: #999;margin: 0;line-height: 50px;}
+.rounder_select .onboard_check input:checked ~ .checkmark p{color: #000;}
+.rounder_select .onboard_checkbox_body .onboard_checkbox{height:50px;margin-bottom: 0;}
+.rounder_select .onboard_check input:checked ~ .checkmark:before{top: 19px;left: 20px;}
+.rounder_select .onboard_check{border-color: #ccc;}
+.onboard_checkbox_body .bottom_but a {width: 165px;margin: 0;}
+.onboard_checkbox_body{display: flex;flex-wrap: wrap;gap:20px;row-gap: 30px;} 
+.bottom_but a.fill{width: 125px !important;}
+
+.input-file-container {position: relative;width: 175px;} 
+.file_up .input-file-trigger {display: block;background: #fff;color: #000;transition: all .4s;cursor: pointer;font:400 15px/45px googlesans;border: 1px solid #000;border-radius: 100px;text-align: center;}
+.file_up .input-file {position: absolute;top: 0; left: 0;width: 175px;opacity: 0;padding: 9px 0;cursor: pointer;}
+.file_up .input-file:hover + .input-file-trigger,.file_up .input-file:focus + .input-file-trigger,.file_up .input-file-trigger:hover,.file_up .input-file-trigger:focus {background: #000;color: #fff;}
+.file-return {margin: 0;}
+.file-return:not(:empty) {margin: 20px 0;}
+.file_up .file-return {font-style: italic;font-size: 15px;font-weight: bold;}
+.file_up .file-return:not(:empty):before {content: "Selected file: ";font-style: normal;font-weight: normal;}
+  
+.onboard_checkboxs p{transition: all .4s;border:1px solid #ccc;font:400 14px/42px googlesans;padding: 0 15px;border-radius: 100px;width: 125px;text-align: center;color: #999;} 
+.onboard_checkboxs.active p{color: #333;border-color: #000;}
+.onboard_checkboxs{display: flex;gap:25px;margin-bottom: 25px;}
+.onboard_checkboxs_body{display: flex;}
+.dri_sel_opt{display: flex;gap:25px}
+
+.onboard_checkboxs .onboard_check .checkmark:after,.onboard_checkboxs .onboard_check{background-color: #fff}
+.onboard_checkboxs .onboard_check{border-color: #ccc}
+.onboard_checkboxs .onboard_checkbox,.onboard_checkboxs .onboard_check,.onboard_checkboxs .onboard_check input[type="checkbox"],.onboard_checkboxs .onboard_check .checkmark:after {height:44px;width:44px;border-radius:50%;margin: 0;padding: 0;}
+.onboard_checkboxs .onboard_check input:checked ~ .checkmark:before{background: url(../images/lar_tick.png) no-repeat center center;width: 44px;height: 44px;top:0;left:0;}
+
+.list_top{justify-content: space-between;}
+.onboard_checkbox_outter{min-height: 180px;}
+.onboard_checkboxs .onboard_check .checkmark:after {top: -1px;}    

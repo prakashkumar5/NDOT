@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>Home page</title> 
+        <link rel="shortcut icon" href="public/images/favicon.ico" type="image/x-icon">    
+        <link href="public/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="public/css/style.css" rel="stylesheet" />
+        <link href="public/css/media_style.css" rel="stylesheet" />
+    </head>
+    <body> 
+      <header>
+        <a href="#" title="tmobility">
+          <img src="public/images/logo.png" alt="tmobility"> 
+        </a>
+      </header>
+      <div class="onboard">
+        <div class="onboard_inner">
+          <div class="nav_bar">
+            <p>Product onboard</p>
+          </div>
+          <div class="onboard_content d-flex">
+            <div class="onboard_content_left">
+              <div class="tabs bg-dark">
+                <ul>
+                  <li><a data-toggle="formtab" href="#product" class="active">Set up your Business</a></li>
+                  <li><a data-toggle="formtab" href="#models">Models</a></li>
+                  <li><a data-toggle="formtab" href="#vehicles">Vehicles</a></li>
+                  <li><a data-toggle="formtab" href="#driver">Driver</a></li>
+                  <li><a data-toggle="formtab" href="#dispatch">Dispatch</a></li>
+              </ul>
+              </div>
+            </div>
+            <div class="onboard_content_right">
+              <div class="product_list active" id="product">
+                <div class="list_top d-flex heig">
+                  <div class="product_descr pl-15">
+                    <p>Your preferred product(s)</p>
+                    <span>You can add physical items, digital downloads, services, or anything else you dream up.</span>
+                  </div>
+                  <div class="product_img">
+                    <span><img src="public/images/delivery.png"/></span>
+                  </div>
+                </div>
+                <div class="list_cont">
+                  <form>
+                    <div class="onboard_checkbox_outter"> 
+                      <div class="onboard_checkbox_body"> 
+                        <div class="onboard_checkbox"> 
+                          <label class="onboard_check">
+                            <input type="checkbox" checked="checked" name="category[]" value="ridehailing" required="required" class="">
+                              <div class="checkmark">
+                                <span>
+                                  <img src="public/images/ride_hailing.png">              
+                                </span>
+                                <p>Ride Hailing</p>
+                              </div>
+                          </label>
+                        </div>
+                        <div class="onboard_checkbox"> 
+                          <label class="onboard_check">
+                            <input type="checkbox"  name="category[]" value="ridehailing" required="required" class="">
+                              <div class="checkmark">
+                                <span>
+                                  <img src="public/images/rental.png">              
+                                </span>
+                                <p>Rental</p>
+                              </div>
+                          </label>
+                        </div>
+                        <div class="onboard_checkbox"> 
+                          <label class="onboard_check">
+                            <input type="checkbox"  name="category[]" value="ridehailing" required="required" class="">
+                              <div class="checkmark">
+                                <span>
+                                  <img src="public/images/shuttle.png">              
+                                </span>
+                                <p>Shuttle</p>
+                              </div>
+                          </label>
+                        </div>
+                        <div class="onboard_checkbox"> 
+                          <label class="onboard_check">
+                            <input type="checkbox"   name="category[]" value="ridehailing" required="required" class="">
+                              <div class="checkmark">
+                                <span>
+                                  <img src="public/images/limo.png">              
+                                </span>
+                                <p>Limo</p>
+                              </div>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bottom_but">
+                      <a data-toggle="formtab" href="#models" class="" title="Next">Next</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="product_list rounder_select" id="models"  >
+                <div class="list_top d-flex heig">
+                  <div class="product_descr pl-15">
+                    <p>Selet the Models</p>
+                    <span>You can add physical items, digital downloads, services, or anything else you dream up.</span>
+                  </div>
+                  <div class="product_img">
+                    <span><img src="public/images/models.png"/></span>
+                  </div>
+                </div>
+                <div class="list_cont">
+                  <form>
+                    <div class="onboard_checkbox_outter"> 
+                      <div class="onboard_checkbox_body"> 
+                        <div class="onboard_checkbox"> 
+                          <label class="onboard_check">
+                            <input type="checkbox" checked="checked" name="category[]" value="ridehailing" required="required" class="">
+                              <div class="checkmark">
+                                <p>Mini</p>
+                              </div>
+                          </label>
+                        </div>
+                        <div class="onboard_checkbox"> 
+                          <label class="onboard_check">
+                            <input type="checkbox"  name="category[]" value="ridehailing" required="required" class="">
+                              <div class="checkmark">
+                                <p>Prime</p>
+                              </div>
+                          </label>
+                        </div>
+                        <div class="onboard_checkbox"> 
+                          <label class="onboard_check">
+                            <input type="checkbox"  name="category[]" value="ridehailing" required="required" class="">
+                              <div class="checkmark">
+                                <p>Sedan</p>
+                              </div>
+                          </label>
+                        </div>
+                        <div class="onboard_checkbox"> 
+                          <label class="onboard_check">
+                            <input type="checkbox"   name="category[]" value="ridehailing" required="required" class="">
+                              <div class="checkmark">
+                                <p>Luxury</p>
+                              </div>
+                          </label>
+                        </div>
+                        <div class="onboard_checkbox"> 
+                          <label class="onboard_check">
+                            <input type="checkbox"   name="category[]" value="ridehailing" required="required" class="">
+                              <div class="checkmark">
+                                <p>SUV</p>
+                              </div>
+                          </label>
+                        </div>
+                        <div class="onboard_checkbox"> 
+                          <label class="onboard_check">
+                            <input type="checkbox"   name="category[]" value="ridehailing" required="required" class="">
+                              <div class="checkmark">
+                                <p>Mini SUV</p>
+                              </div>
+                          </label>
+                        </div>
+                        <div class="onboard_checkbox"> 
+                          <label class="onboard_check">
+                            <input type="checkbox"   name="category[]" value="ridehailing" required="required" class="">
+                              <div class="checkmark">
+                                <p>Bike</p>
+                              </div>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bottom_but">
+                      <a data-toggle="formtab" href="#vehicles" class="" title="Next">Next</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="product_list rounder_select" id="vehicles">
+                <div class="list_top d-flex heig">
+                  <div class="product_descr pl-15">
+                    <p>Selet the Models</p>
+                    <span>You can add physical items, digital downloads, services, or anything else you dream up.</span>
+                  </div>
+                  <div class="product_img">
+                    <span><img src="public/images/models.png"/></span>
+                  </div>
+                </div>
+                <div class="list_cont">
+                  <form>
+                    <div class="onboard_checkbox_outter">
+                      <div class="onboard_checkbox_body"> 
+                        <div class="onboard_checkbox active"> 
+                          <label class="onboard_check">
+                            <input type="checkbox" checked="checked"  name="category[]" value="ridehailing" required="required" class="">
+                              <div class="checkmark">
+                                <p>Vehicle 1</p>
+                              </div>
+                          </label>
+                        </div>
+                        <div class="onboard_checkbox"> 
+                          <label class="onboard_check">
+                            <input type="checkbox"   name="category[]" value="ridehailing" required="required" class="">
+                              <div class="checkmark">
+                                <p>Vehicle 2</p>
+                              </div>
+                          </label>
+                        </div>
+                        <div class="onboard_checkbox"> 
+                          <label class="onboard_check">
+                            <input type="checkbox"   name="category[]" value="ridehailing" required="required" class="">
+                              <div class="checkmark">
+                                <p>Vehicle 3</p>
+                              </div>
+                          </label>
+                        </div>
+                        <div class="onboard_checkbox"> 
+                          <label class="onboard_check">
+                            <input type="checkbox"   name="category[]" value="ridehailing" required="required" class="">
+                              <div class="checkmark">
+                                <p>Vehicle 4</p>
+                              </div>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bottom_but">
+                      <a data-toggle="formtab" href="#driver" class="fill" title="Create">Create</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="product_list" id="driver">
+                <div class="list_top d-flex heig">
+                  <div class="product_descr pl-15">
+                    <p>Selet the Models</p>
+                    <span>You can add physical items, digital downloads, services, or anything else you dream up.</span>
+                  </div>
+                  <div class="product_img">
+                    <span><img src="public/images/models.png"/></span>
+                  </div>
+                </div>
+                <div class="list_cont">
+                  <form>
+                    <div class="onboard_checkbox_outter"> 
+                      <div class="onboard_checkbox_body"> 
+                          <div class="onboard_checkboxs active"> 
+                            <div class="dri_sel_opt">
+                              <p><span>Driver 1</span></p>
+                              <p><span>Vehicles 1</span></p>
+                              <p><span>Mini</span></p>
+                            </div> 
+                            <div class="onboard_checkbox"> 
+                              <label class="onboard_check">
+                                <input type="checkbox" checked="checked" value="ridehailing" required="required" class="dri_sel"  />
+                                  <div class="checkmark">
+                                  </div>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="onboard_checkboxs  "> 
+                            <div class="dri_sel_opt">
+                              <p><span>Driver 2</span></p>
+                              <p><span>Vehicles 2</span></p>
+                              <p><span>Prime</span></p>
+                            </div> 
+                            <div class="onboard_checkbox"> 
+                              <label class="onboard_check">
+                                <input type="checkbox"   value="ridehailing" required="required" class="dri_sel"  />
+                                  <div class="checkmark">
+                                  </div>
+                              </label>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="bottom_but">          
+                      <a data-toggle="formtab" href="#dispatch" class="fill" title="Create">Create</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="product_list" id="dispatch"  >
+                <div class="list_top d-flex heig">
+                  <div class="product_descr pl-15">
+                    <p>Import the trips</p>
+                    <span>You can add physical items, digital downloads, services, or anything else you dream up.</span>
+                  </div>
+                  <div class="product_img">
+                    <span><img src="public/images/dispatch.png"/></span>
+                  </div>
+                </div>
+                <div class="list_cont">
+                  <form>
+                    <div class="onboard_checkbox_outter"> 
+                      <div class="onboard_checkbox_body"> 
+                        <div class="bottom_but file_up"> 
+                          <div class="input-file-container">  
+                            <input class="input-file" id="my-file" type="file">
+                            <label tabindex="0" for="my-file" class="input-file-trigger">Import test trips</label>
+                          </div>
+                          <p class="file-return"></p>
+                        </div>
+                      </div>
+                    </div> 
+                    <div class="bottom_but">
+                      <a href="#" class="fill" title="Create">Create</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+        <script src="public/js/jquery.min.js"></script>
+        <script src="public/js/bootstrap.bundle.min.js"></script> 
+        <script src="public/js/jquery.easing.min.js"></script> 
+        <script src="public/js/scripts.js"></script>
+</html>
