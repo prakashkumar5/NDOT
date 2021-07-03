@@ -1,0 +1,31 @@
+@media (min-width: 1260px){ 
+
+}
+
+
+
+@media (max-width: 1200px){
+    
+
+}
+
+@media (max-width: 960px){
+    .booking .booking_left_side{width: 450px;}
+    .booking .booking_right_side{width: calc(100% - 450px);}
+}
+
+
+@media(max-width : 768px){ 
+    .booking .booking_left_side{width: 100%;}
+    .booking .booking_right_side{width: 100%}
+    .booking { flex-direction: column;}
+    .booking_left_bottom{height: 100%;}
+}
+
+
+
+
+@media (max-width: 480px){ 
+   .fare_details_inner_body{flex-wrap: wrap;gap: 30px;flex-direction: column;}
+
+}
