@@ -1,0 +1,46 @@
+*{box-sizing: border-box;} 
+a,a:hover{text-decoration: none;}
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, ol, ul, li, form, label, tbody, tfoot, thead, footer, header, section { margin: 0; padding: 0;}
+@font-face{font-family:'googlesans';src:url('../fonts/googlesans/googlesans-regular.woff2') format('woff2'),url('../fonts/googlesans/googlesans-regular.eot?#iefix') format('embedded-opentype'),url('../fonts/googlesans/googlesans-regular.ttf')format('truetype'),url('../fonts/googlesans/googlesans-regular.woff') format('woff');font-weight: 100;font-style: normal;}
+@font-face{font-family:'googlesans';src:url('../fonts/googlesans/googlesans-medium.woff2') format('woff2'),url('../fonts/googlesans/googlesans-medium.eot?#iefix') format('embedded-opentype'),url('../fonts/googlesans/googlesans-medium.ttf')format('truetype'),url('../fonts/googlesans/googlesans-medium.woff') format('woff');font-weight: 400;font-style: normal;}
+.mb-100px{margin-bottom: 100px;}
+.container{max-width: 1200px;}
+.navbar-expand-md > .container{width: 100%;padding-right: 15px;padding-left: 15px;margin-right: auto;margin-left: auto;}
+.header{background:#fff;}
+.header .tmobility{font:400 32px/56px googlesans;color:#000}
+.header .nav-link{font:100 18px/56px googlesans;color:#000;padding: 0 15px !important;}
+.header li:last-child .nav-link{font:100 22px/58px googlesans;color:#fff;background: #000;padding: 0 30px !important;border-radius: 3px;margin-left: 35px;width: min-content;} 
+.navbar{padding: 30px 0;transition: .5s;}
+.navbar.navbar-shrink{padding: 10px 0;box-shadow: 0px 3px 15px rgb(204 204 204 / 30%);}
+.navbar button:focus{outline: none;}
+.nav-link{position: relative;}
+.nav-link.active:after{background: #000;position: absolute;content: "";height: 2px;width: 22px;bottom: 13px;left: 15px;}
+.banner{padding-top:195px}
+.banner h1{font:400 55px googlesans;padding-top: 40px;color: #000;}
+.banner p{font:100 20px googlesans;padding-top: 10px;color: #666;}
+.about .col-md-6:first-child{border-right: 1px solid #d8d8de;}
+.about_inner{width: 55%; margin:0 auto;text-align: center;}
+.about_inner{padding: 105px 0 95px; }
+.about_inner span img{margin-bottom: 85px; }
+.about_inner h2{font:400 38px googlesans;color: #000; text-transform: uppercase;}
+.about_inner p{font:100 18px/24px googlesans;color: #666;padding-top: 15px;} 
+.download{background: url(../images/download.png) no-repeat center/cover; height: 926px;position: relative;} 
+.download::before{position: absolute;content: "";background: rgba(0,0,0,.6);width: 100%;height: 100%;top: 0;} 
+.download p{font:400 48px/72px googlesans;color: #fff;text-transform: uppercase;}
+.download_inner{display: flex;justify-content: flex-end;align-items: center;height: 926px;}
+.down_link{display: flex;gap: 13px;margin-top: 30px;}
+.contact_us p{text-align: center;font: 400 38px googlesans;color: #000}
+.contact_us form{background: #f6f6f6;margin-top: 43px;border-radius: 4px;padding: 40px 20px;display: flex;flex-wrap: wrap;gap:28px}
+.contact_us form .input_details{width: calc(50% - 14px);}
+.contact_us form .input_details:nth-last-child(2),.contact_us form .input_details:last-child{width: 100%;} 
+.input_details input[type=text],.input_details  textarea,.input_details select{width: 100%;background: #fff;border: 2px solid #eaeaea;border-radius: 2px;font: 100 14px/53px googlesans;min-height:53px;padding: 0 12px;outline: none;color: #333;}
+.input_details input[type=text]::placeholder,.input_details textarea::placeholder{font: 100 14px/51px googlesans;color: #b2b2b2;}
+.input_details input[type=submit]{background: #000;color: #fff;font: 100 18px/55px googlesans;border-radius: 5px;padding:0 60px;border: none;outline: none;}
+.footer_inner{display: flex;justify-content: space-between;padding: 40px 0 30px;}
+.footer_inner .terms a{font:100 18px googlesans; color: #000;} 
+.footer_inner .terms span{background: #000;width: 1px;height: 21px;display: block; } 
+.footer_inner .terms{display: flex;gap:20px; } 
+.copy_right span,.copy_right a{font:100 18px googlesans;color: #000;}
+.copy_right span.copy_sym{font:100 26px googlesans;margin-top: -2px;}
+.top_button {background:#000 url(../images/arrow.png) no-repeat center center;width: 50px;height: 50px;border-radius: 100%;position: fixed;bottom: 30px;right: 30px;}
+ 
