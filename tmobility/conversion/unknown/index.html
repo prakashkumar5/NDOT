@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>tmobility</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <script src="public/js/jquery-3.5.1.slim.min.js" ></script> 
+        <style>
+            *{box-sizing: border-box;padding: 0;margin: 0;}
+        </style>
+    </head>
+    <body> 
+        <input type="submit" id="" name="email" value="Make Booking" title="Make Booking" class="view_but" style="margin:5px;width: min-content; padding: 0 40px; background: #000; color: white; border: none;  border-radius: 5px; cursor: pointer; line-height: 50px;font:18px googlesans-regular;min-height: 50px;">
+        <div class="popup" style="position: fixed;top: 0;left: 0;right: 0;bottom: 0;background:rgba(0,0,0,.5);padding: 50px;display: none;z-index: 999999">
+            <span class="close_icon" style="background: #000;border-radius: 50%;line-height: 30px;width: 30px;height: 30px;position: absolute;top:55px;right: 55px;font-family:Open Sans;font-size: 20px;cursor:pointer;padding: 0 10px;color:#fff;" title="Close">x</span>
+            <div style="width: 100%;height: 100%;display: block;">
+                <iframe class="iframe" src="booking.html" style="z-index: 9999;width: 100%;height: 100%;border: none;"></iframe>
+            </div>
+        </div> 
+    </body>   
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".view_but").click(function(){
+                $(".popup").show();
+                $(".view_but").hide();
+            });
+            $(".popup").click(function(){
+                $(".popup").hide();
+                $(".view_but").show();
+            })
+        });
+    </script>     
+</html> 
